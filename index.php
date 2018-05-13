@@ -18,14 +18,6 @@
     <div id="map" class="map"></div>
     <script type="text/javascript">
 
-       // set icon marker
-       var icon = new ol.StyleMap({
-        'externalGraphic': 'assets/img/icon.png',
-        'graphicOpacity': 1.0,
-        'graphicWith': 16,
-        'graphicHeight': 32,
-        'graphicYOffset': -32
-       });
 
       var map = new ol.Map({
         target: 'map',
