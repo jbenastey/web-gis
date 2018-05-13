@@ -1,0 +1,31 @@
+MAP
+	NAME "jalan"
+	EXTENT 101.2694 0.3855 101.6381 0.6825
+	SIZE 400 400
+
+	WEB
+		METADATA
+			"wms_enable_request" "GetMap"
+		END
+	END
+
+	PROJECTION
+		"init=epsg:4326"
+	END
+
+	LAYER
+		NAME "jalan"
+		DATA "jalan.shp"
+		STATUS DEFAULT
+		TYPE line
+
+		CLASS
+			STYLE
+				COLOR 0 255 0
+				OPACITY 20
+				OUTLINECOLOR 0 0 0
+				WIDTH 3
+			END
+		END
+	END
+END

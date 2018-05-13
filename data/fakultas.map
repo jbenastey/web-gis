@@ -1,0 +1,38 @@
+MAP
+	NAME "fakultas"
+	EXTENT 101.2694 0.3855 101.6381 0.6825
+	SIZE 400 400
+
+	WEB
+		METADATA
+			"wms_enable_request" "GetMap GetFeatureInfo GetCapabilities"
+		END
+	END
+
+	PROJECTION
+		"init=epsg:4326"
+	END
+
+	LAYER
+		NAME "fakultas"
+		DATA "fakultas.shp"
+		STATUS DEFAULT
+		TYPE POINT
+
+		CLASS
+      	NAME "fakultas"
+			SYMBOL "circle"
+			SIZE 5
+			COLOR 0 0 255
+		END
+	END
+
+	SYMBOL
+		NAME "circle"
+		TYPE ellipse
+		FILLED true
+		POINTS
+			10 10
+		END
+	END
+END

@@ -1,0 +1,33 @@
+MAP
+  NAME "uin"
+  EXTENT 101.2694 0.3855 101.6381 0.6825
+  SIZE 400 400
+
+  WEB
+    METADATA
+      "wms_enable_request" "GetMap"
+    END
+  END
+
+  PROJECTION
+    "init=epsg:4326"
+  END
+
+  LAYER
+		NAME "uin"
+		DATA "uin.shp"
+		STATUS DEFAULT
+		TYPE POLYGON
+
+		CLASS
+			STYLE
+				COLOR 0 0 255
+				OPACITY 20
+				OUTLINECOLOR 0 0 0
+				WIDTH 1
+			END
+		END
+	END
+
+
+END
