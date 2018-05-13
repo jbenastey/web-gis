@@ -1,20 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="ol.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/ol.css" type="text/css">
     <style>
       .map {
         height: 400px;
         width: 100%;
       }
     </style>
-    <script src="ol-debug.js" type="text/javascript"></script>
+    <script src="assets/js/ol-debug.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/FeaturePopups.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
     <title>OpenLayers example</title>
   </head>
   <body>
     <h2>My Map</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
+
+       // set icon marker
+       var icon = new ol.StyleMap({
+        'externalGraphic': 'assets/img/icon.png',
+        'graphicOpacity': 1.0,
+        'graphicWith': 16,
+        'graphicHeight': 32,
+        'graphicYOffset': -32
+       });
+
       var map = new ol.Map({
         target: 'map',
         layers: [
