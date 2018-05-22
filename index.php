@@ -102,6 +102,7 @@
           anchorXUnits: 'fraction',
           anchorYUnits: 'pixels',
           src: 'icon.png'
+          src: 'assets/img/icon.png'
         }))
       });
 
